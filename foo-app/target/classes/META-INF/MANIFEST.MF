@@ -1,0 +1,19 @@
+Manifest-Version: 1.0
+Bnd-LastModified: 1505304622289
+Build-Jdk: 1.8.0_144
+Built-By: sdn
+Bundle-Blueprint: OSGI-INF/blueprint/shell-config.xml
+Bundle-Description: ONOS OSGi bundle archetype
+Bundle-ManifestVersion: 2
+Bundle-Name: foo-app
+Bundle-SymbolicName: org.foo.app
+Bundle-Version: 1.0.0.SNAPSHOT
+Created-By: Apache Maven Bundle Plugin
+Export-Package: org.foo.app;uses:="org.apache.karaf.shell.commands,org.o
+ nosproject.cli";version="1.0.0"
+Import-Package: org.apache.karaf.shell.commands;version="[3.0,4)",org.on
+ osproject.cli;version="[1.10,2)",org.osgi.service.blueprint;version="[1
+ .0.0,2.0.0)",org.slf4j;version="[1.7,2)"
+Require-Capability: osgi.ee;filter:="(&(osgi.ee=JavaSE)(version=1.8))"
+Service-Component: OSGI-INF/org.foo.app.AppComponent.xml
+Tool: Bnd-3.0.0.201509101326
